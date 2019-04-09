@@ -3,21 +3,25 @@
 #include <sys/msg.h>
 #include <sys/ipc.h>
 #include <string.h>
-
-#define CLIENT 123
-#define SERVER 321
-#define W_SIZE 256
-
-typedef struct message_t
-{
-    long type;
-    char word[W_SIZE];
-} message;
+#include "util.h"
 
 int main(int argc, char **argv)
 {
-    int client_queue = msgget (CLIENT, 0666);
-    int server_queue = msgget (SERVER, 0666);
+
+    if (argc < 2)
+        {
+            fprintf (stderr, "Word to translate is not give!\nUse: ./client [word]\n");
+            exit (1);
+        }
+    else if (argc > 2)
+    {
+        fprintf (stderr, "Too many arguments. Input only one word!\nUse: ./client [word]\n");
+        exit (1);
+    }
+
+
+    client_queue = msgget (CLIENT, 0666);
+    server_queue = msgget (SERVER, 0666);
 
     message msg;
     strcpy (msg.word, argv[1]);
