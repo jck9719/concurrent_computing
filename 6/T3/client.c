@@ -6,12 +6,12 @@
 
 #define CLIENT 123
 #define SERVER 321
-#define WORD_SIZE 256
+#define W_SIZE 256
 
 typedef struct message_t
 {
     long type;
-    char word[WORD_SIZE];
+    char word[W_SIZE];
 } message;
 
 int main(int argc, char **argv)
@@ -23,11 +23,10 @@ int main(int argc, char **argv)
     strcpy (msg.word, argv[1]);
     msg.type = 1;
 
-    msgsnd (server_queue, &msg, sizeof(char) * WORD_SIZE, 0);
-    msgrcv (client_queue, &msg, sizeof(char) * WORD_SIZE, 0, 0);
+    msgsnd (server_queue, &msg, sizeof(char) * W_SIZE, 0);
+    msgrcv (client_queue, &msg, sizeof(char) * W_SIZE, 0, 0);
 
-    fprintf(stdout, "PL: %s\n", argv[1]);
-    fprintf(stdout, "EN: %s\n", msg.word);
+    fprintf(stdout, "[PL]: %s\n[EN]: %s\n", argv[1], msg.word);
 
     return 0;
 }

@@ -39,11 +39,11 @@ typedef struct message_t
 
 int main ()
 {
-
     signal (SIGINT, clean);
 
     client_queue = msgget (CLIENT, 0666 | IPC_CREAT);
     server_queue = msgget (SERVER, 0666 | IPC_CREAT);
+
     message msg;
 
     while (1)
