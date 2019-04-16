@@ -13,9 +13,9 @@
 
 extern int g_sharedMemory, g_semaphores;
 
-void printBoard(int** board);
-int makeMove(int** board, int col, int row, int sign);
-int checkMove(int** board);
+void show_board(int** board);
+int movement(int** board, int col, int row, int sign);
+int state_check(int** board);
 void cleanup(int signal);
 
 #endif

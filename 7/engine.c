@@ -11,7 +11,7 @@
 
 int g_sharedMemory, g_semaphores;
 
-void printBoard(int** board)
+void show_board(int** board)
 {
     printf(" ");
     for (int i = 0; i < COLS; i++)
@@ -48,7 +48,7 @@ void printBoard(int** board)
     printf("\n");
 }
 
-int makeMove(int** board, int col, int row, int sign)
+int movement(int** board, int col, int row, int sign)
 {
     if((col < COLS) && (row < ROWS) && (col >= 0) && (row >= 0) && (board[col][row] == EMPTY))
     {
@@ -62,7 +62,7 @@ int makeMove(int** board, int col, int row, int sign)
     }
 }
 
-int checkMove(int** board)
+int state_check(int** board)
 {
     int occupiedFields = 0;
     for (int i = 0; i < 3; i++)
@@ -108,5 +108,6 @@ void cleanup(int signal)
 {
     semctl(g_semaphores, 0, IPC_RMID, 0);
     shmctl(g_sharedMemory, IPC_RMID, 0);
+    printf ("Game exited!\n");
     exit(0);
 }

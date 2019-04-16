@@ -60,9 +60,9 @@ int main ()
         printf("Waiting...\n");
         semop(g_semaphores, attemptMove, 1);
 
-        printBoard(board);
+        show_board(board);
 
-        if (checkMove(board) == GAME_END)
+        if (state_check(board) == GAME_END)
         {
             cleanup(0);
         }
@@ -72,9 +72,9 @@ int main ()
         {
             printf("Your turn!\nEnter row number and column nuber!\n");
             scanf("%d %d", &row, &col);
-        } while(makeMove(board, row-1, col-1, playerSign) < 0);
+        } while(movement(board, row-1, col-1, playerSign) < 0);
 
-        printBoard(board);
+        show_board(board);
         semop(g_semaphores, unlockOpponent, 1);
     }
 
