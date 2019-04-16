@@ -57,7 +57,7 @@ int main ()
 
     while(1)
     {
-        printf("Connecting...\n");
+        printf("Waiting...\n");
         semop(g_semaphores, attemptMove, 1);
 
         printBoard(board);
@@ -70,7 +70,7 @@ int main ()
         int row, col;
         do
         {
-            printf("Your turn [ROW COL]: ");
+            printf("Your turn!\nEnter row number and column nuber!\n");
             scanf("%d %d", &row, &col);
         } while(makeMove(board, row-1, col-1, playerSign) < 0);
 

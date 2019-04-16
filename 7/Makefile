@@ -1,8 +1,8 @@
 CC = gcc
 
-all : engine main final
+all : engin main final
 
-engine :
+engin :
 	$(CC) -c -g engine.c
 
 main :
