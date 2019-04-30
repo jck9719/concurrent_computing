@@ -4,35 +4,16 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <arpa/inet.h>
+#include "handler.h"
 
-int main(){
-	
-	struct sockaddr_in ip4addr;
-	bzero((char *) &ip4addr, sizeof(ip4addr));
-	ip4addr.sin_family = AF_INET;
-	ip4addr.sin_port = htons((ushort) 5000);
-	inet_pton(AF_INET, "153.19.1.202", &ip4addr.sin_addr);
+int main ()
+{
+	scanf("%d", &x);
 
-	int fromlen;
-	fromlen = sizeof(struct sockaddr_in);
+	result = handle_message (x);
+	fprintf (stdout, "Result = %d\n", result);
+	fprintf (stdout, "Function: x^2 + 1\n");
 
-	int msg;
-	printf("Podaj liczbe: ");
-	scanf("%d", &msg);
-
-	int s;
-	s = socket(PF_INET, SOCK_DGRAM, 0);
-
-	bind(s, (struct sockaddr*) &ip4addr, fromlen);
-
-	int buff = htonl(msg);
-	sendto(s, (char *)&buff, sizeof(buff), 0, (struct sockaddr*) &ip4addr, fromlen);
-
-	printf("Liczba wyslana do serwera: [%d]\n", msg);
-
-	int byte_count;
-	byte_count = recvfrom(s, (char *)&buff, sizeof(buff), 0, (struct sockaddr*) &ip4addr, &fromlen);
-	buff = ntohl(buff);
-	
-	printf("Liczba otrzymana po obliczeniu przez funkcje na serwerze: %d\n", buff);
+	return 0;
 }           
