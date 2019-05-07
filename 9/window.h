@@ -9,6 +9,6 @@
 #define PIXEL_I 1234567
 #define PIXEL_J 6789000
 
-int new_window (int n, char* host);
+int draw (int n, char* host);
 
 #endif
