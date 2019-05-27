@@ -12,23 +12,23 @@
 
 
    Struktura komunikatu od klienta do serwera:
-
+    ```
    ------------------------------------------------ ............ -----------
    |       int        |       int       |    łańcuch (zmienna długość)     |
    ------------------------------------------------ ............ -----------
     długość pozostałej         ID                  $HOME klienta
     części komunikatu
-
+    ```
 
    Struktura komunikatu od serwera do klienta:
-
+    ```
    ------------------------------ ............. -----------
    |       int        |     łańcuch (zmienna długość)     |
    ------------------------------ ............. -----------
     długość pozostałej              odpowiedź
     części komunikatu
 
-
+    ```
    Nazwa kolejki odbiorczej serwera: serwerfifo .
    Nazwa kolejki odbiorczej klienta: klientfifo .
 

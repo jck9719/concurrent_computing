@@ -1,4 +1,4 @@
-ZARZĄDZANIE PROCESAMI I KOMUNIKACJA PRZEZ WSPÓŁDZIELONE PLIKI W PROGRAMACH W BASH'U
+# ZARZĄDZANIE PROCESAMI I KOMUNIKACJA PRZEZ WSPÓŁDZIELONE PLIKI W PROGRAMACH W BASH'U
 
 1. Utworzyć kilka (2 - 3) egzemplarzy skryptów w bash'u:
 
@@ -54,13 +54,14 @@ ZARZĄDZANIE PROCESAMI I KOMUNIKACJA PRZEZ WSPÓŁDZIELONE PLIKI W PROGRAMACH W 
    Utworzyć prostą parę programów klient - serwer iteracyjny, komunikującą się
    przez dwa pliki (dla danych i wyników), działającą na zasadzie ciągłego
    odpytywania plików (w pętli aktywnego czekania).
-                                ----------
-    wczytanie                   |  dane  |
+
+   ```
+    wczytanie                   |  dane  |  
     -------->|--------------|-->------------>|--------------|
              |proces klienta|                |proces serwera|
     <--------|--------------|<------------<--|--------------|
-    wyświetlenie                | wyniki |
-                                ----------
+    wyświetlenie                 | wyniki |
+    ```
 
     Klient pobiera z klawiatury i zapisuje do pliku dane pojedynczą liczbę
     całkowitą. Serwer pobiera daną z pliku, oblicza jakąś prostą funkcję

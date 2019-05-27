@@ -4,6 +4,7 @@ PROSTE MECHANIZMY KOORDYNACJI PROCESÓW W BASH'U
 
       ojciec
 
+    ```  
     declare -i x y
     echo -n "Podaj liczbe calkowita: "
     read x
@@ -13,21 +14,22 @@ PROSTE MECHANIZMY KOORDYNACJI PROCESÓW W BASH'U
     y=y+$?
     echo "Wynik: $y"
     exit 0
-
+    ```
       syn
-
+    ```
     declare -i p
     p=$1
     p=p*p*p
     exit $p
-
+    ```
+    
     (powyższa para skryptów realizuje obliczenie wartości wielomianu x*x + x*x*x
     przy warunku, że nie zostanie przekroczony zakres obliczeniowy dla liczb
     naturalnych jednobajtowych, czyli 0, ..., 255).
 
 2.  Wczytać liczby naturalne n, k (0<=k<=n<=5) i obliczyć wartość dwumianu
     Newtona dla danych (n, k) metodą współbieżnego obliczenia trzech silni:
-
+    ```
     ...
     silnia n &
     ...
@@ -41,6 +43,7 @@ PROSTE MECHANIZMY KOORDYNACJI PROCESÓW W BASH'U
     ...
     wait ...
     ...
+    ```
 
 3.  (PODLEGA ODBIOROWI - CZAS 2 TYGODNIE)
 
