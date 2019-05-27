@@ -1,3 +1,5 @@
+# OPEROWANIE NA KOLEJKACH FIFO W JĘZYKU C
+
 1. (PODLEGA ODBIOROWI - CZAS 2 TYGODNIE)
 
    Napisać program serwera prostej wielodostępnej bazy danych oraz program klienta

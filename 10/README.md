@@ -1,4 +1,4 @@
-# WĽTKI WEDŁUG NORMY POSIX
+# WĄTKI WEDŁUG NORMY POSIX
 
 1. Obejrzeć, skompilować i uruchomić program przykładowy podany na wykładzie
    (pamiętać o opcji -lpthread w poleceniu kompilacji).
@@ -6,7 +6,7 @@
 2. (PODLEGA ODBIOROWI - CZAS 2 TYGODNIE)
 
    Napisać wielowštkowy program obliczajšcy współbieżnie wyznacznik macierzy
-   kwadratowej liczb całkowitych metodš podwyznaczników:
+   kwadratowej liczb całkowitych metod podwyznaczników:
 
    a) dla macierzy 4x4 (za 1 punkt);    
    b) rekurencyjnie dla macierzy nxn (n>=4) (za 2 punkty).

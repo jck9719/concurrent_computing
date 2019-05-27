@@ -1,4 +1,4 @@
-KOLEJKI FIFO I SYGNAŁY W BASH'U
+# KOLEJKI FIFO I SYGNAŁY W BASH'U
 
 1. Za pomocą polecenia o postaci mkfifo nazwa utworzyć w swoim katalogu domowym
    dwie kolejki FIFO. Przy ich użyciu przeprowadzić rozmowę: a) pomiędzy dwoma

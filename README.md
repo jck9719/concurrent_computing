@@ -1,0 +1,12 @@
+# Programowanie Współbieżne
+1. [Zarządzanie procesami i komunoikacja przez współdzielone pliki w programach w Bash'u](https://github.com/jck9719/concurrent_computing/tree/master/1)
+2. [Komunikacja przez współdzielone pliki w programach w języku C](https://github.com/jck9719/concurrent_computing/tree/master/2)
+3. [Proste mechanizmy koordynacji procesów w Bash'u](https://github.com/jck9719/concurrent_computing/tree/master/3)
+4. [Kolejki FIFO i sygnały w Bash'u](https://github.com/jck9719/concurrent_computing/tree/master/4)
+5. [Operowanie na kolejkach FIFO w języku C](https://github.com/jck9719/concurrent_computing/tree/master/5)
+6. [Kolejki komunikatów](https://github.com/jck9719/concurrent_computing/tree/master/6)
+7. [Pamięć dzielona i semafory](https://github.com/jck9719/concurrent_computing/tree/master/7)
+8. [Gniazda BSD](https://github.com/jck9719/concurrent_computing/tree/master/8)
+9. [Biblioteka funkcji graficznych w Xlib](https://github.com/jck9719/concurrent_computing/tree/master/9)
+10. [Wątki według normy POSIX](https://github.com/jck9719/concurrent_computing/tree/master/10)
+11. [Projekt semestralny](https://github.com/jck9719/concurrent_computing/tree/master/11)

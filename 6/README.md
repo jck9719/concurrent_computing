@@ -1,4 +1,4 @@
-KOLEJKI KOMUNIKATÓW
+# KOLEJKI KOMUNIKATÓW
 
 1. Obejrzeć parę programów przykładowych załączonych do Wykładu 8. Zastąpić
    ustalony numer klucza (10) numerem wygenerowanym przez funkcję ftok()

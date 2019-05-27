@@ -1,4 +1,4 @@
-PAMIĘĆ DZIELONA I SEMAFORY
+# PAMIĘĆ DZIELONA I SEMAFORY
 
 1. Utworzyć nieduży segment pamięci dzielonej i dołączyć go w dwóch różnych
    miejscach do przestrzeni adresowej procesu. Sprawdzić, że umieszczona w nim

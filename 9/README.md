@@ -1,4 +1,4 @@
-BIBLIOTEKA FUNKCJI GRAFICZNYCH XLIB
+# BIBLIOTEKA FUNKCJI GRAFICZNYCH XLIB
 
 1. Obejrzeć, skompilować i wypróbować działanie dowolnego spośród programów
    graficznych przedstawionych na wykładzie. Zmieniając argument funkcji

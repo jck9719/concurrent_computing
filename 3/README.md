@@ -1,4 +1,4 @@
-PROSTE MECHANIZMY KOORDYNACJI PROCESÓW W BASH'U
+# PROSTE MECHANIZMY KOORDYNACJI PROCESÓW W BASH'U
 
 1.  Wypróbować działanie pary przykładowych skryptów załączonych do Wykładu 6:
 
